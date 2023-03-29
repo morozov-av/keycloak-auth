@@ -14,5 +14,13 @@ export const swaggerOptions: HapiSwagger.RegisterOptions = {
 	],
 	grouping: 'tags',
 	tagsGroupingFilter: (tag)=> !!tag,
-	documentationPath: '/swagger'
+	documentationPath: '/swagger',
+	securityDefinitions: {
+		jwt: {
+			type: 'apiKey',
+			name: 'Authorization',
+			in: 'header'
+		}
+	},
+	security: [ { jwt: [] } ]
 };

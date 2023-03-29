@@ -22,12 +22,18 @@
     "@hapi/hapi": "^21.3.1",
     "@hapi/inert": "^7.1.0",
     "@hapi/vision": "^7.0.1",
+    "dotenv": "^16.0.3",
+    "hapi-auth-bearer-token": "^8.0.0",
     "hapi-swagger": "^16.0.1",
     "install-peerdeps": "^3.0.3",
-    "joi": "^17.9.1"
+    "joi": "^17.9.1",
+    "jsonwebtoken": "^9.0.0",
+    "keycloak-backend": "^4.0.1"
   },
   "devDependencies": {
     "@types/hapi": "^18.0.8",
+    "@types/hapi-auth-bearer-token": "^6.1.4",
+    "@types/jsonwebtoken": "^9.0.1",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@typescript-eslint/parser": "^5.57.0",

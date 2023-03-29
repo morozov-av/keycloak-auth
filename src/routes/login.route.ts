@@ -6,6 +6,12 @@ export const loginRoute: ServerRoute = {
 	method: 'POST',
 	path: '/login',
 	options: {
+		plugins: {
+			'hapi-swagger': {
+				security: []
+			}
+		},
+		auth: false,
 		id: 'login',
 		description: 'Login endpoint',
 		notes: 'returns jwt token',
