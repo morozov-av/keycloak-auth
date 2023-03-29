@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 const config = {
-	...process.env
+  ...process.env
 };
 
 export default config;
