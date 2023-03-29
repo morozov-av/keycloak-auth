@@ -1,0 +1,50 @@
+{
+  "realm" : "MaukApp",
+  "users" : [ {
+    "id" : "2ea49347-2d2f-4d3f-9c81-0eebcc1b06ed",
+    "createdTimestamp" : 1680104380073,
+    "username" : "a5.morozov@outlook.com",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Foo",
+    "lastName" : "Baz",
+    "email" : "a5.morozov@outlook.com",
+    "credentials" : [ {
+      "id" : "11bcaa83-730b-4e5c-8896-9e3729a13cb7",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1680104393468,
+      "secretData" : "{\"value\":\"hvmN8PTHqzJwCPvhNEYVWS9qf4SkIl3Roo1/M6K2gW8=\",\"salt\":\"QFegJ3QmYqT6dWV+ss/c3g==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ "UPDATE_PASSWORD" ],
+    "realmRoles" : [ "default-roles-maukapp" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "e2cc74fa-a9a5-4e72-a02e-bfe5632d428f",
+    "createdTimestamp" : 1680104254979,
+    "username" : "mauk.lekph@gmail.com",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Andrey",
+    "lastName" : "Morozov",
+    "email" : "mauk.lekph@gmail.com",
+    "credentials" : [ {
+      "id" : "30db632d-b0d2-4120-b39b-3c4739777b30",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1680104276699,
+      "secretData" : "{\"value\":\"idP+aHQY8zt4K9pAgspuHdAVFFmyQg+IpPAjVDXupB8=\",\"salt\":\"/KXHjNnIFMw5suSZW3UFrg==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-maukapp" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}

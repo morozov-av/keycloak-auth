@@ -14,6 +14,7 @@ const port = process.env.PORT || 3000;
 		port,
 		debug: { request: [ 'error' ] },
 		routes: {
+			cors: true,
 			response: {
 				modify: true
 			}

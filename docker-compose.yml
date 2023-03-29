@@ -1,0 +1,41 @@
+version: "3.3"
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak
+    restart: always
+    volumes:
+      - ./realm:/opt/keycloak/data/import
+    ports:
+      - "8080:8080"
+    command:
+      - start-dev --import-realm
+      - --features admin-fine-grained-authz
+    env_file: .env
+    environment:
+      KEYCLOAK_ADMIN: keycloak
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      DB_VENDOR: mysql
+      DB_ADDR: mysql
+      DB_USER: root
+      DB_PASSWORD: root
+    networks:
+    - database
+
+  mysql:
+    image: mysql:latest
+    restart: always
+    env_file: .env
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./volume/mysql:/var/lib/mysql
+    networks:
+      - database
+
+networks:
+  database:
+    driver: bridge
